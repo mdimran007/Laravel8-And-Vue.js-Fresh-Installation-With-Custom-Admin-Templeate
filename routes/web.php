@@ -23,3 +23,6 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Controllers\BackEnd\HomeController@index')->name('dashboard');
 
+
+Route::get('/{anypath}', 'App\Http\Controllers\BackEnd\HomeController@index')->where('path', '.*');
+Route::get('/{anypath}/{id}', 'App\Http\Controllers\BackEnd\HomeController@index')->where('path', '.*');
