@@ -28,7 +28,11 @@
   <link rel="stylesheet" href="{{asset('backend')}}/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('backend')}}/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('backend')}}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  
+  
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -587,6 +591,11 @@
 <script src="{{asset('backend')}}/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('backend')}}/dist/js/demo.js"></script>
+
+<!-- DataTables -->
+<script src="{{asset('backend')}}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{asset('backend')}}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
 
 <script src="{{asset('js/app.js')}}"></script>
 

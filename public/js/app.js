@@ -2476,9 +2476,89 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log('Component mounted.'), $(function () {
+      $('#example1').DataTable();
+      $('#example2').DataTable({
+        'paging': true,
+        'lengthChange': false,
+        'searching': false,
+        'ordering': true,
+        'info': true,
+        'autoWidth': false
+      });
+    });
   }
 });
 
@@ -20347,14 +20427,6 @@ var staticRenderFns = [
                 { staticClass: "box-body chat", attrs: { id: "chat-box" } },
                 [
                   _c("div", { staticClass: "item" }, [
-                    _c("img", {
-                      staticClass: "online",
-                      attrs: {
-                        src: "public/backend/dist/img/img/user4-128x128.jpg",
-                        alt: "user image"
-                      }
-                    }),
-                    _vm._v(" "),
                     _c("p", { staticClass: "message" }, [
                       _c("a", { staticClass: "name", attrs: { href: "#" } }, [
                         _c("small", { staticClass: "text-muted pull-right" }, [
@@ -20391,14 +20463,6 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "item" }, [
-                    _c("img", {
-                      staticClass: "offline",
-                      attrs: {
-                        src: "public/backend/dist/img/img/user3-128x128.jpg",
-                        alt: "user image"
-                      }
-                    }),
-                    _vm._v(" "),
                     _c("p", { staticClass: "message" }, [
                       _c("a", { staticClass: "name", attrs: { href: "#" } }, [
                         _c("small", { staticClass: "text-muted pull-right" }, [
@@ -20416,14 +20480,6 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "item" }, [
-                    _c("img", {
-                      staticClass: "offline",
-                      attrs: {
-                        src: "public/backend/dist/img/img/user2-160x160.jpg",
-                        alt: "user image"
-                      }
-                    }),
-                    _vm._v(" "),
                     _c("p", { staticClass: "message" }, [
                       _c("a", { staticClass: "name", attrs: { href: "#" } }, [
                         _c("small", { staticClass: "text-muted pull-right" }, [
@@ -21134,9 +21190,112 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Test Component")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("section", { staticClass: "content-header" }, [
+        _c("h1", [
+          _vm._v("\n    Data Tables\n    "),
+          _c("small", [_vm._v("advanced tables")])
+        ]),
+        _vm._v(" "),
+        _c("ol", { staticClass: "breadcrumb" }, [
+          _c("li", [
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", { staticClass: "fa fa-dashboard" }),
+              _vm._v(" Home")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Tables")])]),
+          _vm._v(" "),
+          _c("li", { staticClass: "active" }, [_vm._v("Data tables")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "box" }, [
+              _c("div", { staticClass: "box-header" }, [
+                _c("h3", { staticClass: "box-title" }, [_vm._v("Data List")]),
+                _c("span", { staticStyle: { float: "right" } }, [
+                  _c("button", { staticClass: "btn btn-primary" }, [
+                    _vm._v("Add New")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "box-body" }, [
+                _c(
+                  "table",
+                  {
+                    staticClass: "table table-bordered table-striped",
+                    attrs: { id: "example1" }
+                  },
+                  [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("SN")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Category Images")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Category Name")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Status")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Create At")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("Trident")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "Internet\n                Explorer 4.0\n              "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Win 95+")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(" 4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("X")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Trident")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "Internet\n                Explorer 5.0\n              "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Win 95+")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("C")])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
